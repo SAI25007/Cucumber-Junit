@@ -3,12 +3,12 @@ Feature: web application Login
 
   # Background is used to run the pre-requisits steps required for below scenarios this works with in the file
 #Background:
-#Given user need to login the page
+#Given user need to login the page (admin account)
 #When enter username and password
 #Then user entered the website
 
   
-@SmokeTest  
+@SmokeTest  @Test
 Scenario: Adimi login
     
  Given user is on NetBanking landing page
@@ -18,7 +18,7 @@ Scenario: Adimi login
 
 
 #Parameterisation to iterate multiple times
-@RegressionTest
+@RegressionTest @Test
 Scenario Outline: User login
   
  Given user is on NetBanking landing page
@@ -33,7 +33,7 @@ Examples:
  
  
  # Multiple data can be passed using below way
- @SmokeTest @RegresionTest
+ @SmokeTest  @Test
 Scenario: Admin user login
 
   Given User is on login page

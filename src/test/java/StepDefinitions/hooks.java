@@ -8,7 +8,7 @@ public class hooks {
 
 	@Before
 	public void netBanking() {
-		System.out.println("login to netBanking");
+		System.out.println("login to webpage");
 	}
 	
 	// To run for any specific scenario provide the tag as below
@@ -23,5 +23,5 @@ public class hooks {
 		System.out.println("Cleared Evreything");
 	}
 	
-	//Before > Background > Scenario > After
+	//Before(hooks)> Background > Scenario > After
 }
